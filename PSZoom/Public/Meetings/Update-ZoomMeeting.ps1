@@ -513,7 +513,7 @@ function Update-ZoomMeeting {
         'registration_type'       = 'RegistrationType'
         'audio'                   = 'Audio'
         'auto_recording'          = 'AutoRecording'
-        'enforce_login'           = 'Enfogin'
+        'enforce_login'           = 'EnforceLogin'
         'enforce_login_domains'   = 'EnforceLoginDomains'
         'alternative_hosts'       = 'AlternativeHosts'
         'close_registration'      = 'CloseRegistration'

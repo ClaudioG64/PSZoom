@@ -816,7 +816,7 @@ function New-ZoomMeeting {
             'cn_meeting'                     = 'CNMeeting'
             'contact_email'                  = 'ContacEmail'
             'contact_name'                   = 'ContactName'
-            'enforce_login'                  = 'Enfogin'
+            'enforce_login'                  = 'EnforceLogin'
             'enforce_login_domains'          = 'EnforceLoginDomains'
             'global_dialin_countries'        = 'GlobalDialInCountries'
             'host_video'                     = 'HostVideo'
