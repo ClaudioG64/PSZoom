@@ -197,7 +197,7 @@ function Update-ZoomUser {
     process {
         foreach ($user in $UserId) {
             $Request = [System.UriBuilder]"https://api.zoom.us/v2/users/$user"
-            $RequestBody = @{ }   
+            $RequestBody = @{ }
 
             if ($PSBoundParameters.ContainsKey('LoginType')) {
                 $LoginType = switch ($LoginType) {
@@ -262,8 +262,8 @@ function Update-ZoomUser {
             $RequestBody = $RequestBody | ConvertTo-Json
 
             if ($pscmdlet.ShouldProcess) {
-                $response = Invoke-ZoomRestMethod -Uri $request.Uri -Headers ([ref]$Headers) -Body $requestBody -Method PATCH -ApiKey $ApiKey -ApiSecret $ApiSecret
-        
+                $response = Invoke-ZoomRestMethod -Uri $request.Uri -Headers ([ref]$Headers) -Body $requestBody -Method PATCH #-ApiKey $ApiKey -ApiSecret $ApiSecret
+
                 if (-not $PassThru) {
                     Write-Output $response
                 }
